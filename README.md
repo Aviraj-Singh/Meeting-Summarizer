@@ -7,3 +7,10 @@ Majority of leaders and executive of any organization spend more than 20 hours a
 ## My Solution
 
 Optimising meeting performance by providing a Meeting Summary of the recorded meeting. Thus, one can read summary whenever needed.
+
+## Process Flow
+
+1. Recording is converted to text using Wav2Vec2 model from Hugging Face
+2. The text script is then filtered using spell corrector for better and corrected script
+3. Different models like Seq2Seq, SBERT, etc. are applied on the text to generate summary
+4. Performance of the models are compared and best one is chosen for production
